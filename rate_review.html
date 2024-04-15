@@ -1,0 +1,37 @@
+<html>
+    
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Rate and Review Movie</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Rate and Review Movie</h1>
+
+        <div class="rating-form">
+            <form id="reviewForm">
+                <input type="text" id="movieName" name="movieName" value="" style="display: none;">
+                <!-- <input type="number" id="rating" name="rating" placeholder="Rating" min="1" max="5" required><br> -->
+                <input type="text" id="personName" name="personName" placeholder="enter name..">
+                <br>
+                <select name="stars" id="rating">
+                    <option value="★☆☆☆☆">★☆☆☆☆</option>
+                    <option value="★★☆☆☆">★★☆☆☆</option>
+                    <option value="★★★☆☆">★★★☆☆</option>
+                    <option value="★★★★☆">★★★★☆</option>
+                    <option value="★★★★★">★★★★★</option>
+                  </select>
+                <textarea id="reviewText" name="review" placeholder="Write your review here..." rows="6" required></textarea><br>
+                <input type="submit" value="Submit Review">
+            </form>
+        </div>
+
+        <div class="past-reviews" id="pastReviews">
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
